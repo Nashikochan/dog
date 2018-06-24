@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/*
+Theme Name: petcafe
+Author: saitou
+*/
+
+/******** basekit *********/
+
+html, body, div, span, applet, object, iframe, strong,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, legend, caption, 
+tbody, tfoot, thead, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	list-style:none;
+}
+
+
+.FNT09 { font-size: 0.9em; }
+.FNT11 { font-size: 1.1em; }
+.FNT12 { font-size: 1.2em; }
+.FNT13 { font-size: 1.3em; }
+.FNT14 { font-size: 1.4em; }
+.FNT15 { font-size: 1.5em; }
+.FNT16 { font-size: 1.6em; }
+.FNT17 { font-size: 1.7em; }
+.FNT18 { font-size: 1.8em; }
+
+.FNTW600 { font-weight: 600; }
+.FNTW700 { font-weight: 700; }
+.FNTW800 { font-weight: 800; }
+.FNTW900 { font-weight: 900; }
+
+
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #000000;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a:active {
+	color: #000000;
+}
+
+.mt0 {margin-top:0 !important;}
+.mt5 {margin-top:5px !important;}
+.mt10 {margin-top:10px !important;}
+.mt15 {margin-top:15px !important;}
+.mt20 {margin-top:20px !important;}
+.mt30 {margin-top:30px !important;}
+.mt40 {margin-top:40px !important;}
+.mt50 {margin-top:50px !important;}
+.mt150 {margin-top:150px !important;}
+
+.mr0 {margin-right:0 !important;}
+.mr5 {margin-right:5px !important;}
+.mr10 {margin-right:10px !important;}
+.mr15 {margin-right:15px !important;}
+.mr20 {margin-right:20px !important;}
+.mr30 {margin-right:30px !important;}
+.mr40 {margin-right:40px !important;}
+.mr50 {margin-right:50px !important;}
+
+.mb0 {margin-bottom:0 !important;}
+.mb5 {margin-bottom:5px !important;}
+.mb10 {margin-bottom:10px !important;}
+.mb15 {margin-bottom:15px !important;}
+.mb20 {margin-bottom:20px !important;}
+.mb30 {margin-bottom:30px !important;}
+.mb40 {margin-bottom:40px !important;}
+.mb50 {margin-bottom:50px !important;}
+
+.ml0 {margin-left:0 !important;}
+.ml5 {margin-left:5px !important;}
+.ml10 {margin-left:10px !important;}
+.ml15 {margin-left:15px !important;}
+.ml20 {margin-left:20px !important;}
+.ml30 {margin-left:30px !important;}
+.ml40 {margin-left:40px !important;}
+.ml50 {margin-left:50px !important;}
+
+.ml-5 {margin-left:-5px !important;}
+
+
+.TAC { text-align: center; }
+.TAR { text-align: right; }
+.TAL { text-align: left; }
+
+
+
+/****************/
+
+body {
+	width: 100%;
+	font-family: "MS ゴシック",sans-serif;
+}
+
+header {
+	width: 100%;
+}
+
+header img {
+	float: left;
+}
+
+header nav {
+	float: right;
+
+}
+
+header nav ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	background-color: #cfa972;
+	padding: 13px 30px;
+	border: solid 1px #ffffff;
+	color: #ffffff;
+}
+
+header nav ul li:hover {
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	background-color: #ac6a00;
+	padding: 13px 30px;
+	border: solid 1px #ffffff;
+	color: #ffffff;
+}
+
+.bgcC {
+	background-color: #ac6a00; !important
+}
+
+.box940 {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.box620 {
+	width: 620px;
+	float: left;
+
+}
+
+.box300 {
+	width: 300px;
+	float: right;
+
+}
+
+
+#wrapper {
+	width: 100%;
+}
+
+main {
+	width: 100%;
+}
+
+
+/* http://bellsmarket.hatenablog.com/entry/2015/02/28/010000 */
+.dpy ul {
+	width: 100%;
+	height: 180px; /*指定しないとul:afterで【padding】のように下が広がる*/
+	letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する。 */
+	text-align: justify;
+	text-justify: distribute-all-lines;
+}
+
+.dpy ul:after {
+	content:"";
+	display: inline-block;
+	width: 100%;
+	line-height: 0;
+	height: 0;
+}
+
+.dpy ul li {
+	letter-spacing:normal;
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+}
+
+
+
+.box120 {
+	width: 120px;
+	float: left;
+}
+
+.box470 {
+	width: 470px;
+	float: right;
+}
+
+
+footer {
+	background-color: #ff7c1c;
+	width: 100%;
+	padding: 60px 0;
+}
+
+.bbt {
+	border-bottom: 3px solid #ffffff;
+}
+
+.bgcW { 
+	background-color: #ffffff;
+	width: 330px;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+
+.box_h10 { 
+	width: 600px;
+	margin: 0 auto;
+	z-index: 100;
+}
+
+.box_h10 ul li {
+/*	float: left; */
+	font-size: 1.2em;
+	color: #ffffff;
+	display: inline-block;
+}
+
+
+/*********news single***********/
+
+.new_image {
+	width: 500px;
+	display: inline-block;
+}
+
+.new_image img {
+	max-width: 500px;
+}
+
+.news {
+	width: 400px;
+	float: right;
+
+}
+
+.cl_bw {
+	color: #ac6a00;
+}
+
+
+
+/*************看板犬リスト***************/
+
+
+.blk {
+/*	display: flex;
+	justify-content: center;
+	*/
+	float: left;
+	margin: 30px 7px 0 8px;
+	
+}
+
+
+.c_d {
+	width: 100%;
+}
+
+.c_d li {
+	display: inline-block;
+	width: 460px;
+}
+
+
+/*************看板犬リスト詳細ページ***************/
+
+
+.shousai {
+	width: 430px;
+	border: 15px solid #cfa972;
+	float: left;
+}
+
+.shousai p {
+	margin: 10px;
+}
+
+.shousai img {
+	margin: 50px 0 30px 15px;
+}
+
+
+.photo {
+	width: 450px;
+	float: right;
+}
+
+.photo img {
+	max-width: 450px;
+}
+
+
+
+/*************料金ページ***************/
+
+table.type1 {
+	border-collapse: collapse;
+	/* セルのボーダーの表示の仕方を指定する collapseは隣接するボーダーを重ねて表示 */
+	text-align: center;
+	line-height: 1.5;
+	color: #ac6a00;
+	width: 620px;
+}
+
+
+table.type1 td {
+	border: 1px solid #ff7c1c;
+}
+
+
+
+/**************パンくずリスト***************/
+div.breadcrumbs {
+/*    margin-left: 222px;	*/
+    padding:5px 0 0 10px;
+}
+
+
+
+
+
+
+
+
+
